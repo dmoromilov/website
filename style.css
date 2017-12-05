@@ -22,7 +22,6 @@ body {
         display: flex;
 
     }
-
     .hero-section {
         height: 100vh;
         display: flex;
@@ -435,46 +434,6 @@ body {
     nav {
         position: absolute;
         display: flex;
-
-    }
-    .topnav a:not(:first-child) {
-        display: none;
-        text-decoration: none;
-    }
-    .topnav a.icon {
-        float: right;
-        display: block;
-
-        color: #212121;
-    }
-    .topnav a{
-        color: #212121;
-        text-decoration: none;
-        display: none;
-
-    }
-    .logo{
-        display: flow-root;
-    }
-    .topnav.responsive {
-        position: relative;
-        text-decoration: none;
-    }
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-        text-decoration: none;
-
-        color: #212121;
-
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-        text-decoration: none;
-
 
     }
 }
