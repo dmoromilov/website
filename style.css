@@ -1,18 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
-    margin:0;
+    margin: 0;
+    background: #ffffff;
+    color: #212121;
+    font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (min-width: 320px) {
-    body {
-        background: #ffffff;
-        color: #212121;
-        font-family: 'Open Sans', sans-serif;
-    }
-    h3 {
-        font-size: 30px;
-    }
     .wrapper {
         max-width: 100%;
         width: 100%;
@@ -20,7 +15,6 @@ body {
     nav {
         position: absolute;
         display: flex;
-
     }
     .hero-section {
         height: 100vh;
@@ -209,12 +203,22 @@ body {
         width: 100%;
         display: flex;
         flex-flow: column;
-        padding: 60px 20px 40px;
         background-color: #222222;
         color: #fff;
+        padding: 0;
+
     }
     .location p{
         color: #585858;
+    }
+    .location{
+        padding: 10px 10px 10px;
+
+    }
+    .rights p{
+        color: #585858;
+        font-size: x-small;
+        padding: 0px 10px 0px 10px;
     }
 }
 
@@ -228,8 +232,6 @@ body {
         overflow: hidden;
         text-decoration: none;
         color: #212121;
-
-
     }
     .hero-lg-content {
         display: block;
@@ -331,7 +333,6 @@ body {
         overflow: hidden;
         text-decoration: none;
     }
-
     .topnav a {
         float: left;
         display: block;
@@ -341,7 +342,6 @@ body {
         text-decoration: none;
         font-size: 17px;
     }
-
     .topnav .icon {
         display: none;
     }
@@ -383,17 +383,22 @@ body {
         margin-bottom: 50px;
     }
     footer {
-        width: 100%;
-        position: relative;
+        flex-flow: column;
+        display: flex;
+        background-color: #222222;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+    }
+    .location-wrap{
         flex-flow: row;
         display: flex;
         justify-content: center;
-        padding: 60px 20px 120px;
-        background-color: #222222;
-        color: #fff;
     }
     .location{
         padding: 60px 20px 40px;
+        flex-flow: column;
+        display: flex;
     }
     .location p{
         color: #585858;
@@ -404,36 +409,37 @@ body {
     .rights{
         background-color: #1e1e1e;
         padding: 20px 350px 20px;
-        position: absolute;
-        bottom: 0;
     }
     .rights-content{
         color: #585858;
-
         width: 100%;
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
         align-content: left;
-
     }
     .rights-copyright p{
         display: flex;
         align-items: center;
         width: 500px;
         justify-content: space-evenly;
+        font-size: medium;
     }
     .rights-icon{
         margin: 10px;
-    }
-
-}
-
-@media screen and (max-width: 600px) {
-
-    nav {
-        position: absolute;
         display: flex;
+    }
+    .rights-mail p{
+        font-size: medium;
+    }
+
+}
+
+    /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
+    Show the link that contains should open and close the topnav (.icon) */
+    @media screen and (max-width: 600px) {
 
     }
-}
+
+    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.
+    This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
