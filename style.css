@@ -15,6 +15,13 @@ body {
     nav {
         position: absolute;
         display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .topnav{
+        position: absolute;
+        right: 40px;
+        top: 10px;
     }
     .topnav a {
         display: none;
@@ -28,12 +35,9 @@ body {
     .topnav.responsive {
         position: relative;
         text-decoration: none;
-
     }
     .topnav.responsive a.icon {
         position: absolute;
-        left: 100px;
-        top: 5px;
     }
     .topnav.responsive a {
         float: none;
@@ -375,6 +379,7 @@ body {
     .topnav {
         overflow: hidden;
         text-decoration: none;
+        position: relative;
     }
     .topnav a {
         float: left;
