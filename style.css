@@ -483,6 +483,9 @@ body {
         font-size: medium;
     }
     .rights-icon{
+        display: inherit;
+    }
+    .rights-icon i{
         margin: 10px;
         display: flex;
     }
